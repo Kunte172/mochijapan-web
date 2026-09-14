@@ -13,6 +13,64 @@ enum ContentStatus {
   ARCHIVED
 }
 
+enum UserRole {
+  STUDENT
+  ADMIN
+}
+
+enum LessonProgressStatus {
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum StudySessionType {
+  LEARNING
+  REVIEW
+  SMART_STUDY
+}
+
+enum StudySessionStatus {
+  ACTIVE
+  COMPLETED
+  ABANDONED
+}
+
+enum ReviewRating {
+  AGAIN
+  HARD
+  GOOD
+  EASY
+}
+
+enum SavedWordSource {
+  LESSON
+  DICTIONARY
+  AI_TUTOR
+  MANUAL
+}
+
+model User {
+  id String @id @default(uuid())
+
+  email        String  @unique
+  passwordHash String
+  displayName  String?
+
+  role     UserRole @default(STUDENT)
+  isActive Boolean  @default(true)
+
+  emailVerifiedAt DateTime?
+
+  lessonProgress LessonProgress[]
+  wordStates     UserWordState[]
+  reviewEvents   ReviewEvent[]
+  studySessions  StudySession[]
+  savedWords     SavedWord[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model Course {
   id String @id @default(uuid())
 
@@ -53,7 +111,9 @@ model Lesson {
 
   status ContentStatus @default(DRAFT)
 
-  lessonWords LessonWord[]
+  lessonWords   LessonWord[]
+  progress      LessonProgress[]
+  studySessions StudySession[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -83,6 +143,10 @@ model Word {
 
   lessonWords LessonWord[]
   examples    ExampleSentence[]
+
+  userStates   UserWordState[]
+  reviewEvents ReviewEvent[]
+  savedByUsers SavedWord[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -116,5 +180,138 @@ model ExampleSentence {
 
   createdAt DateTime @default(now())
 
+  @@index([wordId])
+}
+
+model LessonProgress {
+  id String @id @default(uuid())
+
+  userId   String
+  lessonId String
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Restrict)
+
+  status          LessonProgressStatus @default(IN_PROGRESS)
+  currentPosition Int                  @default(0)
+
+  startedAt     DateTime  @default(now())
+  lastStudiedAt DateTime  @default(now())
+  completedAt   DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, lessonId])
+  @@index([lessonId])
+  @@index([userId, lastStudiedAt])
+}
+
+model UserWordState {
+  id String @id @default(uuid())
+
+  userId String
+  wordId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word Word @relation(fields: [wordId], references: [id], onDelete: Restrict)
+
+  masteryLevel   Int   @default(0)
+  memoryStrength Float @default(1.0)
+
+  firstLearnedAt DateTime  @default(now())
+  lastReviewedAt DateTime?
+  nextReviewAt   DateTime?
+
+  correctCount   Int @default(0)
+  incorrectCount Int @default(0)
+  lapseCount     Int @default(0)
+  reviewCount    Int @default(0)
+  streak         Int @default(0)
+
+  averageResponseTimeMs Float?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, wordId])
+  @@index([wordId])
+  @@index([userId, nextReviewAt])
+}
+
+model StudySession {
+  id String @id @default(uuid())
+
+  userId   String
+  lessonId String?
+
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson? @relation(fields: [lessonId], references: [id], onDelete: Restrict)
+
+  type   StudySessionType
+  status StudySessionStatus @default(ACTIVE)
+
+  totalItems   Int @default(0)
+  correctItems Int @default(0)
+
+  startedAt DateTime  @default(now())
+  endedAt   DateTime?
+
+  reviewEvents ReviewEvent[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, startedAt])
+  @@index([lessonId])
+}
+
+model ReviewEvent {
+  id String @id @default(uuid())
+
+  userId    String
+  wordId    String
+  sessionId String?
+
+  user    User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word    Word          @relation(fields: [wordId], references: [id], onDelete: Restrict)
+  session StudySession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+
+  isCorrect Boolean
+  rating    ReviewRating?
+
+  responseTimeMs Int?
+
+  previousMasteryLevel   Int?
+  newMasteryLevel        Int?
+  previousMemoryStrength Float?
+  newMemoryStrength      Float?
+
+  idempotencyKey String? @unique
+
+  reviewedAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  @@index([userId, reviewedAt])
+  @@index([wordId, reviewedAt])
+  @@index([sessionId])
+}
+
+model SavedWord {
+  id String @id @default(uuid())
+
+  userId String
+  wordId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word Word @relation(fields: [wordId], references: [id], onDelete: Restrict)
+
+  source SavedWordSource @default(MANUAL)
+  note   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, wordId])
   @@index([wordId])
 }
