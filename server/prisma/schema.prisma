@@ -1,0 +1,120 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ContentStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model Course {
+  id String @id @default(uuid())
+
+  sourceCourseId Int? @unique
+
+  code          String?
+  title         String
+  titleEn       String?
+  description   String?
+  descriptionEn String?
+
+  level     String?
+  sortOrder Int     @default(0)
+
+  status ContentStatus @default(DRAFT)
+
+  lessons Lesson[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Lesson {
+  id String @id @default(uuid())
+
+  sourceLessonId Int?
+
+  courseId String
+  course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  code          String?
+  title         String
+  titleEn       String?
+  description   String?
+  descriptionEn String?
+
+  sortOrder Int @default(0)
+
+  status ContentStatus @default(DRAFT)
+
+  lessonWords LessonWord[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([courseId, sourceLessonId])
+  @@index([courseId])
+}
+
+model Word {
+  id String @id @default(uuid())
+
+  sourceWordId Int? @unique
+
+  code String?
+
+  writtenForm String?
+  reading     String
+  romaji      String?
+
+  meaningVi String
+  meaningEn String?
+
+  partOfSpeech String?
+
+  audioUrl   String?
+  pictureUrl String?
+
+  lessonWords LessonWord[]
+  examples    ExampleSentence[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([reading])
+  @@index([writtenForm])
+}
+
+model LessonWord {
+  lessonId String
+  wordId   String
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  word   Word   @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  position Int?
+
+  @@id([lessonId, wordId])
+  @@index([wordId])
+}
+
+model ExampleSentence {
+  id String @id @default(uuid())
+
+  wordId String
+  word   Word   @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  japanese   String
+  vietnamese String?
+  english    String?
+
+  createdAt DateTime @default(now())
+
+  @@index([wordId])
+}
