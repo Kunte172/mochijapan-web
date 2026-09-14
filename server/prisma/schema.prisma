@@ -66,6 +66,7 @@ model User {
   reviewEvents   ReviewEvent[]
   studySessions  StudySession[]
   savedWords     SavedWord[]
+  authSessions   AuthSession[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -314,4 +315,25 @@ model SavedWord {
 
   @@unique([userId, wordId])
   @@index([wordId])
+}
+
+model AuthSession {
+  id String @id @default(uuid())
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  refreshTokenHash String @unique
+
+  expiresAt DateTime
+  revokedAt DateTime?
+
+  userAgent String?
+  ipAddress String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, revokedAt])
+  @@index([expiresAt])
 }

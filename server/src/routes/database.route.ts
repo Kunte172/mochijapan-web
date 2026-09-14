@@ -44,6 +44,7 @@ databaseRouter.get('/summary', async (_req, res) => {
       prisma.userWordState.count(),
       prisma.reviewEvent.count(),
       prisma.studySession.count(),
+      prisma.authSession.count(),
       prisma.savedWord.count(),
     ]);
 
