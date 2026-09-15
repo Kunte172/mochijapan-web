@@ -1,12 +1,25 @@
 import type { CookieOptions, Request, Response } from 'express';
 
-import { loginSchema, registerSchema } from '../schemas/auth.schema.js';
 import {
+  changePasswordSchema,
+  forgotPasswordSchema,
+  loginSchema,
+  registerSchema,
+  resendVerificationSchema,
+  resetPasswordSchema,
+  verifyEmailSchema,
+} from '../schemas/auth.schema.js';
+import {
+  changePassword,
   getCurrentUser,
   loginUser,
   logoutAuthSession,
   refreshAuthSession,
   registerUser,
+  requestPasswordReset,
+  resendEmailVerification,
+  resetPassword,
+  verifyEmailAddress,
 } from '../services/auth.service.js';
 import { REFRESH_TOKEN_SECONDS } from '../services/token.service.js';
 import { AppError } from '../utils/app-error.js';
@@ -23,6 +36,13 @@ function refreshCookieOptions(): CookieOptions {
     path: '/api/auth',
     maxAge: REFRESH_TOKEN_SECONDS * 1000,
   };
+}
+
+function clearRefreshCookie(res: Response) {
+  res.clearCookie(REFRESH_COOKIE_NAME, {
+    ...refreshCookieOptions(),
+    maxAge: undefined,
+  });
 }
 
 function sessionMetadata(req: Request) {
@@ -79,11 +99,7 @@ export async function logout(req: Request, res: Response) {
   const refreshToken = req.cookies?.[REFRESH_COOKIE_NAME];
 
   await logoutAuthSession(refreshToken);
-
-  res.clearCookie(REFRESH_COOKIE_NAME, {
-    ...refreshCookieOptions(),
-    maxAge: undefined,
-  });
+  clearRefreshCookie(res);
 
   return res.status(204).send();
 }
@@ -99,4 +115,54 @@ export async function me(req: Request, res: Response) {
     status: 'ok',
     user,
   });
+}
+
+export async function verifyEmail(req: Request, res: Response) {
+  const { token } = verifyEmailSchema.parse(req.body);
+  const user = await verifyEmailAddress(token);
+
+  return res.status(200).json({
+    status: 'ok',
+    user,
+  });
+}
+
+export async function resendVerification(req: Request, res: Response) {
+  const { email } = resendVerificationSchema.parse(req.body);
+  await resendEmailVerification(email);
+
+  return res.status(202).json({
+    status: 'ok',
+    message: 'If the account exists and is not verified, a verification message has been prepared.',
+  });
+}
+
+export async function forgotPassword(req: Request, res: Response) {
+  const { email } = forgotPasswordSchema.parse(req.body);
+  await requestPasswordReset(email);
+
+  return res.status(202).json({
+    status: 'ok',
+    message: 'If the account exists, password reset instructions have been prepared.',
+  });
+}
+
+export async function resetPasswordController(req: Request, res: Response) {
+  const input = resetPasswordSchema.parse(req.body);
+  await resetPassword(input);
+  clearRefreshCookie(res);
+
+  return res.status(204).send();
+}
+
+export async function changePasswordController(req: Request, res: Response) {
+  if (!req.auth) {
+    throw new AppError(401, 'AUTH_REQUIRED', 'Authentication is required.');
+  }
+
+  const input = changePasswordSchema.parse(req.body);
+  await changePassword(req.auth.userId, input);
+  clearRefreshCookie(res);
+
+  return res.status(204).send();
 }
