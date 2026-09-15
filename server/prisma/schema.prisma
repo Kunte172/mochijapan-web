@@ -84,11 +84,15 @@ model Course {
 
   sourceCourseId Int? @unique
 
-  code          String?
-  title         String
-  titleEn       String?
-  description   String?
-  descriptionEn String?
+  code           String?
+  title          String
+  titleEn        String?
+  description    String?
+  descriptionEn  String?
+  imageUrl       String?
+  outcomeVi      String?
+  outcomeEn      String?
+  sourceMetadata Json?
 
   level     String?
   sortOrder Int     @default(0)
@@ -109,11 +113,13 @@ model Lesson {
   courseId String
   course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
-  code          String?
-  title         String
-  titleEn       String?
-  description   String?
-  descriptionEn String?
+  code           String?
+  title          String
+  titleEn        String?
+  description    String?
+  descriptionEn  String?
+  imageUrl       String?
+  sourceMetadata Json?
 
   sortOrder Int @default(0)
 
@@ -144,7 +150,12 @@ model Word {
   meaningVi String
   meaningEn String?
 
-  partOfSpeech String?
+  partOfSpeech   String?
+  searchForms    String[] @default([])
+  otherForm      String?
+  sourceWmId     Int?
+  sourceReview   Int?
+  sourceMetadata Json?
 
   audioUrl   String?
   pictureUrl String?
@@ -181,6 +192,8 @@ model ExampleSentence {
 
   wordId String
   word   Word   @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  sourceKey String? @unique
 
   japanese   String
   vietnamese String?

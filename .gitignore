@@ -6,5 +6,7 @@ dist/
 
 !.env.example
 
+server/data/raw/
+
 .vscode/
 .DS_Store

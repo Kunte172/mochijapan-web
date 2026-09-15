@@ -1,0 +1,4205 @@
+{
+  "generatedAt": "2026-09-15T11:39:38.055Z",
+  "mode": "APPLY",
+  "targetStatus": "PUBLISHED",
+  "summary": {
+    "courses": 11,
+    "lessons": 651,
+    "wordOccurrences": 8118,
+    "normalizedLessonWordLinks": 8061,
+    "duplicateLessonWordOccurrences": 57,
+    "uniqueSourceWordIds": 6044,
+    "duplicateSourceWordIds": 1587,
+    "conflictingSourceWordIds": 210,
+    "audioReferences": 8118,
+    "pictureReferences": 3401,
+    "missingAudioFiles": 20,
+    "missingPictureFiles": 45
+  },
+  "issueSummary": {
+    "errors": 0,
+    "warnings": 284
+  },
+  "issues": [
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\5\\word.json",
+      "sourceId": 75,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\8\\word.json",
+      "sourceId": 118,
+      "message": "Picture file not found locally: ashita.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\26\\word.json",
+      "sourceId": 500,
+      "message": "Picture file not found locally: onakagaippai.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\29\\word.json",
+      "sourceId": 581,
+      "message": "Picture file not found locally: kashu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\41\\word.json",
+      "sourceId": 1146,
+      "message": "Audio file not found locally: kanji_shiai.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\45\\word.json",
+      "sourceId": 3009,
+      "message": "Picture file not found locally: chuushajou.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\46\\word.json",
+      "sourceId": 3013,
+      "message": "Audio file not found locally: kiku"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\47\\word.json",
+      "sourceId": 3028,
+      "message": "Audio file not found locally: kureru.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\47\\word.json",
+      "sourceId": 3029,
+      "message": "Audio file not found locally: shoukaishimasu.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\47\\word.json",
+      "sourceId": 3035,
+      "message": "Picture file not found locally: school_junbi.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\59\\word.json",
+      "sourceId": 605,
+      "message": "Picture file not found locally: kazarimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\66\\word.json",
+      "sourceId": 754,
+      "message": "Audio file not found locally: ageru.mp4"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\74\\word.json",
+      "sourceId": 912,
+      "message": "Picture file not found locally: kagakusha.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\81\\word.json",
+      "sourceId": 1084,
+      "message": "Picture file not found locally: jouhou.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\88\\word.json",
+      "sourceId": 1243,
+      "message": "Picture file not found locally: junjo.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\90\\word.json",
+      "sourceId": 1275,
+      "message": "Picture file not found locally: kakariin.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\91\\word.json",
+      "sourceId": 1284,
+      "message": "Picture file not found locally: gasorenji.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\91\\word.json",
+      "sourceId": 1285,
+      "message": "Picture file not found locally: kaettekimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\94\\word.json",
+      "sourceId": 1326,
+      "message": "Picture file not found locally: igaku.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\97\\word.json",
+      "sourceId": 1372,
+      "message": "Picture file not found locally: irasshaimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\98\\word.json",
+      "sourceId": 1387,
+      "message": "Picture file not found locally: orimasu3.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\102\\word.json",
+      "sourceId": 1411,
+      "message": "Picture file not found locally: kyuukei.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\115\\word.json",
+      "sourceId": 1530,
+      "message": "Picture file not found locally: naosu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\115\\word.json",
+      "sourceId": 1531,
+      "message": "Picture file not found locally: naoru.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\115\\word.json",
+      "sourceId": 1532,
+      "message": "Picture file not found locally: naosu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\132\\word.json",
+      "sourceId": 1084,
+      "message": "Picture file not found locally: jouhou.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\153\\word.json",
+      "sourceId": 1865,
+      "message": "Picture file not found locally: kaado.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\4\\207\\word.json",
+      "sourceId": 3013,
+      "message": "Audio file not found locally: kiku"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\4\\268\\word.json",
+      "sourceId": 3120,
+      "message": "Audio file not found locally: kuufukuwomitasu.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\4\\273\\word.json",
+      "sourceId": 3170,
+      "message": "Audio file not found locally: koukuusha.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\5\\316\\word.json",
+      "sourceId": 3475,
+      "message": "Audio file not found locally: kudamono.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\5\\322\\word.json",
+      "sourceId": 3539,
+      "message": "Audio file not found locally: sheeba.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\341\\word.json",
+      "sourceId": 3769,
+      "message": "Audio file not found locally: kyouka.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\352\\word.json",
+      "sourceId": 3870,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\352\\word.json",
+      "sourceId": 3877,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\352\\word.json",
+      "sourceId": 3878,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\7\\384\\word.json",
+      "sourceId": 4151,
+      "message": "Audio file not found locally: youshoku.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\7\\389\\word.json",
+      "sourceId": 4197,
+      "message": "Audio file not found locally: ryokan.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 436,
+      "message": "Picture file not found locally: kaimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 528,
+      "message": "Picture file not found locally: erai.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 5919,
+      "message": "Picture file not found locally: kitchen.jpg"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json",
+      "sourceId": 605,
+      "message": "Picture file not found locally: kazarimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json",
+      "sourceId": 625,
+      "message": "Picture file not found locally: kagami.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 955,
+      "message": "Picture file not found locally: kaigan.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 754,
+      "message": "Audio file not found locally: ageru.mp4"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 1084,
+      "message": "Picture file not found locally: jouhou.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json",
+      "sourceId": 1275,
+      "message": "Picture file not found locally: kakariin.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json",
+      "sourceId": 1285,
+      "message": "Picture file not found locally: kaettekimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json",
+      "sourceId": 1284,
+      "message": "Picture file not found locally: gasorenji.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\431\\word.json",
+      "sourceId": 1326,
+      "message": "Picture file not found locally: igaku.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json",
+      "sourceId": 5733,
+      "message": "Picture file not found locally: kamaimasen.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json",
+      "sourceId": 1372,
+      "message": "Picture file not found locally: irasshaimasu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json",
+      "sourceId": 1387,
+      "message": "Picture file not found locally: orimasu3.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\438\\word.json",
+      "sourceId": 75,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\442\\word.json",
+      "sourceId": 118,
+      "message": "Picture file not found locally: ashita.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\472\\word.json",
+      "sourceId": 1146,
+      "message": "Audio file not found locally: kanji_shiai.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\474\\word.json",
+      "sourceId": 3013,
+      "message": "Audio file not found locally: kiku"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\474\\word.json",
+      "sourceId": 3009,
+      "message": "Picture file not found locally: chuushajou.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\475\\word.json",
+      "sourceId": 3028,
+      "message": "Audio file not found locally: kureru.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\475\\word.json",
+      "sourceId": 3029,
+      "message": "Audio file not found locally: shoukaishimasu.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\475\\word.json",
+      "sourceId": 3035,
+      "message": "Picture file not found locally: school_junbi.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\512\\word.json",
+      "sourceId": 581,
+      "message": "Picture file not found locally: kashu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\534\\word.json",
+      "sourceId": 1532,
+      "message": "Picture file not found locally: naosu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\536\\word.json",
+      "sourceId": 1326,
+      "message": "Picture file not found locally: igaku.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\550\\word.json",
+      "sourceId": 912,
+      "message": "Picture file not found locally: kagakusha.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\556\\word.json",
+      "sourceId": 1146,
+      "message": "Audio file not found locally: kanji_shiai.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "AUDIO_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\559\\word.json",
+      "sourceId": 7501,
+      "message": "Audio file not found locally: kanji_oyayubi.mp3"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\578\\word.json",
+      "sourceId": 1084,
+      "message": "Picture file not found locally: jouhou.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\603\\word.json",
+      "sourceId": 1530,
+      "message": "Picture file not found locally: naosu.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\608\\word.json",
+      "sourceId": 75,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\618\\word.json",
+      "sourceId": 7724,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PICTURE_FILE_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\638\\word.json",
+      "sourceId": 912,
+      "message": "Picture file not found locally: kagakusha.png"
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\646\\word.json",
+      "sourceId": 7862,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PHONETIC_MISSING",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\648\\word.json",
+      "sourceId": 7882,
+      "message": "phonetic/romaji is missing."
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\36\\word.json",
+      "sourceId": 927,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\1\\36\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\468\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\476\\word.json",
+      "sourceId": 271,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\49\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\476\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\465\\word.json",
+      "sourceId": 274,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\49\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\465\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\461\\word.json",
+      "sourceId": 317,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\50\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\461\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\596\\word.json",
+      "sourceId": 318,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, picture, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\50\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\469\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\596\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "picture",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\465\\word.json",
+      "sourceId": 324,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\50\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\465\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json",
+      "sourceId": 350,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\51\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json",
+      "sourceId": 351,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\51\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\474\\word.json",
+      "sourceId": 355,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\51\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\474\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json",
+      "sourceId": 394,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\52\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json",
+      "sourceId": 395,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\52\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\603\\word.json",
+      "sourceId": 400,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\52\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\392\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\603\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\438\\word.json",
+      "sourceId": 402,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\52\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\438\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json",
+      "sourceId": 404,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\52\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\391\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 436,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: picture, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\53\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json"
+        ],
+        "conflictFields": [
+          "picture",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 437,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\53\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 439,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\53\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json",
+      "sourceId": 440,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\53\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\538\\word.json",
+      "sourceId": 445,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\53\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\474\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\538\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 451,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\54\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 452,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\54\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json",
+      "sourceId": 453,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\54\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\587\\word.json",
+      "sourceId": 455,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\54\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\587\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json",
+      "sourceId": 461,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: en_trans, multi_answer, position, review, wm_id.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\54\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json"
+        ],
+        "conflictFields": [
+          "en_trans",
+          "multi_answer",
+          "position",
+          "review",
+          "wm_id"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 481,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\55\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 482,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\55\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 490,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\55\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json",
+      "sourceId": 494,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\55\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json",
+      "sourceId": 495,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\55\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\412\\word.json",
+      "sourceId": 527,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: en_trans, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\56\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\412\\word.json"
+        ],
+        "conflictFields": [
+          "en_trans",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 528,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: picture, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\56\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json"
+        ],
+        "conflictFields": [
+          "picture",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 556,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: audio, multi_answer, position, review, other_form.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "audio",
+          "multi_answer",
+          "position",
+          "review",
+          "other_form"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 557,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 558,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 560,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review, other_form.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review",
+          "other_form"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 561,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 562,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 563,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\398\\word.json",
+      "sourceId": 570,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\57\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\398\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 586,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 588,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 589,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 590,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 592,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json",
+      "sourceId": 593,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\397\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\398\\word.json",
+      "sourceId": 600,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\58\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\398\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json",
+      "sourceId": 604,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\59\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json",
+      "sourceId": 612,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\59\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json",
+      "sourceId": 613,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: en_trans, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\59\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json"
+        ],
+        "conflictFields": [
+          "en_trans",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json",
+      "sourceId": 617,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\60\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json",
+      "sourceId": 618,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\60\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\399\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\398\\word.json",
+      "sourceId": 620,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\60\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\398\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json",
+      "sourceId": 621,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\60\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 622,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\60\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json",
+      "sourceId": 625,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: picture, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\60\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\400\\word.json"
+        ],
+        "conflictFields": [
+          "picture",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\401\\word.json",
+      "sourceId": 631,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\61\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\401\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json",
+      "sourceId": 634,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\61\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json",
+      "sourceId": 636,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\61\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\401\\word.json",
+      "sourceId": 641,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\61\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\401\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 646,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\62\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json",
+      "sourceId": 647,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\62\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 648,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\62\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json",
+      "sourceId": 649,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\62\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\458\\word.json",
+      "sourceId": 659,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\62\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\458\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 676,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 677,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json",
+      "sourceId": 678,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\393\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 679,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\416\\word.json",
+      "sourceId": 680,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: kanji, en_trans, hint, multi_answer, position, review, wm_id.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\416\\word.json"
+        ],
+        "conflictFields": [
+          "kanji",
+          "en_trans",
+          "hint",
+          "multi_answer",
+          "position",
+          "review",
+          "wm_id"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json",
+      "sourceId": 684,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 686,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json",
+      "sourceId": 687,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: audio, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json"
+        ],
+        "conflictFields": [
+          "audio",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 690,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\63\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 721,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 723,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json",
+      "sourceId": 726,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json",
+      "sourceId": 727,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\403\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\643\\word.json",
+      "sourceId": 728,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\643\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\643\\word.json",
+      "sourceId": 731,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\643\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json",
+      "sourceId": 732,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json",
+      "sourceId": 733,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\64\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\404\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 736,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\65\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 737,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\65\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\606\\word.json",
+      "sourceId": 743,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\65\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\406\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\606\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\406\\word.json",
+      "sourceId": 746,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\65\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\406\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 750,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\66\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 752,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: kanji, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\66\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "kanji",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json",
+      "sourceId": 753,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\66\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\405\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 755,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\66\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\406\\word.json",
+      "sourceId": 762,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\66\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\406\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json",
+      "sourceId": 812,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\67\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json",
+      "sourceId": 813,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\67\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json",
+      "sourceId": 827,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\68\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json",
+      "sourceId": 4221,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\69\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json",
+      "sourceId": 4222,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\69\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\510\\word.json",
+      "sourceId": 4227,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\69\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\510\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\410\\word.json",
+      "sourceId": 4230,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\69\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\410\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\566\\word.json",
+      "sourceId": 4234,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\69\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\566\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\471\\word.json",
+      "sourceId": 844,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\70\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\471\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\643\\word.json",
+      "sourceId": 851,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\70\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\643\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\607\\word.json",
+      "sourceId": 853,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\70\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\607\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\411\\word.json",
+      "sourceId": 856,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\71\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\411\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\650\\word.json",
+      "sourceId": 863,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\71\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\412\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\650\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\412\\word.json",
+      "sourceId": 867,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\71\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\412\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\411\\word.json",
+      "sourceId": 869,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\71\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\411\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json",
+      "sourceId": 870,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\72\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\402\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json",
+      "sourceId": 873,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\72\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\155\\word.json",
+      "sourceId": 881,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\72\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\3\\155\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\411\\word.json",
+      "sourceId": 884,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\72\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\411\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json",
+      "sourceId": 885,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\396\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json",
+      "sourceId": 886,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json",
+      "sourceId": 887,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json",
+      "sourceId": 889,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json",
+      "sourceId": 894,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\414\\word.json",
+      "sourceId": 896,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\414\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\414\\word.json",
+      "sourceId": 898,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\73\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\414\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json",
+      "sourceId": 900,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\74\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\413\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\593\\word.json",
+      "sourceId": 913,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\74\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\593\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 929,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\75\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 930,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\75\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 931,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\75\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 934,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\75\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 935,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\75\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\416\\word.json",
+      "sourceId": 943,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\75\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\416\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 945,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\76\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\408\\word.json",
+      "sourceId": 946,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: trans, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\76\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\408\\word.json"
+        ],
+        "conflictFields": [
+          "trans",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json",
+      "sourceId": 950,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\76\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\394\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json",
+      "sourceId": 955,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: picture, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\76\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\415\\word.json"
+        ],
+        "conflictFields": [
+          "picture",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json",
+      "sourceId": 959,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\77\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json",
+      "sourceId": 962,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\77\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json",
+      "sourceId": 963,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\77\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json",
+      "sourceId": 964,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\77\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\418\\word.json",
+      "sourceId": 972,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\77\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\418\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json",
+      "sourceId": 990,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\78\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\417\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\414\\word.json",
+      "sourceId": 993,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\78\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\414\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 1021,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, position, review, other_form.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\79\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "position",
+          "review",
+          "other_form"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 1022,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\79\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 1023,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\79\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\597\\word.json",
+      "sourceId": 1025,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\79\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\597\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 1064,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\80\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 1065,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\80\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 1079,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\81\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 1083,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\81\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 1085,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\81\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\422\\word.json",
+      "sourceId": 1090,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\81\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\422\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json",
+      "sourceId": 1098,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\82\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\421\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+      "sourceId": 5596,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+      "sourceId": 5595,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+      "sourceId": 5597,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\535\\word.json",
+      "sourceId": 5607,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\535\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\607\\word.json",
+      "sourceId": 5610,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\607\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\591\\word.json",
+      "sourceId": 5612,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\591\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json",
+      "sourceId": 5611,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\83\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\423\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\475\\word.json",
+      "sourceId": 1124,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\84\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\475\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\424\\word.json",
+      "sourceId": 1128,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\84\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\424\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1154,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1155,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, position, review, other_form.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "position",
+          "review",
+          "other_form"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1156,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: trans, phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "trans",
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1157,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1158,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1159,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1162,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1163,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1164,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, en_trans, hint, multi_answer, position, review, wm_id.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\85\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "en_trans",
+          "hint",
+          "multi_answer",
+          "position",
+          "review",
+          "wm_id"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\422\\word.json",
+      "sourceId": 1185,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\86\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\422\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json",
+      "sourceId": 1214,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json",
+      "sourceId": 1215,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json",
+      "sourceId": 1216,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json",
+      "sourceId": 1217,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json",
+      "sourceId": 1218,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json",
+      "sourceId": 1221,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\426\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\546\\word.json",
+      "sourceId": 1226,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\87\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\427\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\546\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\647\\word.json",
+      "sourceId": 1245,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\88\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\427\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\647\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\584\\word.json",
+      "sourceId": 1248,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\88\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\584\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json",
+      "sourceId": 1258,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\89\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json",
+      "sourceId": 1269,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\89\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\428\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1270,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\90\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json",
+      "sourceId": 1271,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\90\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\419\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json",
+      "sourceId": 1281,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\90\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json",
+      "sourceId": 1286,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\91\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json",
+      "sourceId": 1290,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\91\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json",
+      "sourceId": 1293,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\91\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json",
+      "sourceId": 1295,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\91\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\429\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json",
+      "sourceId": 1299,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\92\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\425\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\571\\word.json",
+      "sourceId": 1303,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\92\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\571\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json",
+      "sourceId": 1306,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\92\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\395\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\606\\word.json",
+      "sourceId": 1312,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\93\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\606\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\430\\word.json",
+      "sourceId": 1315,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review, other_form.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\93\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\430\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review",
+          "other_form"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\431\\word.json",
+      "sourceId": 1317,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\93\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\431\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\431\\word.json",
+      "sourceId": 1321,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\93\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\431\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json",
+      "sourceId": 1328,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\94\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\407\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\536\\word.json",
+      "sourceId": 1331,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\94\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\431\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\10\\536\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\636\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\430\\word.json",
+      "sourceId": 1335,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\94\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\430\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json",
+      "sourceId": 1337,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\95\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json",
+      "sourceId": 1341,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\95\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json",
+      "sourceId": 1344,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\95\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\432\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\463\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json",
+      "sourceId": 1351,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\96\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json",
+      "sourceId": 1364,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\96\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json",
+      "sourceId": 1366,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\97\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json",
+      "sourceId": 1376,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\97\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\433\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json",
+      "sourceId": 1382,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\2\\98\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\464\\word.json",
+      "sourceId": 3528,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\5\\321\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\464\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\647\\word.json",
+      "sourceId": 3537,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\5\\322\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\11\\647\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\448\\word.json",
+      "sourceId": 3565,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\5\\325\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\448\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\448\\word.json",
+      "sourceId": 3566,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\5\\325\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\448\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json",
+      "sourceId": 3671,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\335\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\409\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\468\\word.json",
+      "sourceId": 3679,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\335\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\9\\468\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\416\\word.json",
+      "sourceId": 3736,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\338\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\416\\word.json"
+        ],
+        "conflictFields": [
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json",
+      "sourceId": 3825,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: audio, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\347\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\434\\word.json"
+        ],
+        "conflictFields": [
+          "audio",
+          "multi_answer",
+          "review"
+        ]
+      }
+    },
+    {
+      "severity": "WARNING",
+      "code": "WORD_VARIANT_CONFLICT",
+      "sourcePath": "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\430\\word.json",
+      "sourceId": 3878,
+      "message": "Canonical word chosen by latest updated_at. Conflicting fields: phonetic, multi_answer, review.",
+      "details": {
+        "occurrences": [
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\6\\352\\word.json",
+          "C:\\Users\\LapTop\\Downloads\\Project\\mochijapan-web\\server\\data\\raw\\courses\\8\\430\\word.json"
+        ],
+        "conflictFields": [
+          "phonetic",
+          "multi_answer",
+          "review"
+        ]
+      }
+    }
+  ]
+}
