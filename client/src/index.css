@@ -285,3 +285,80 @@ p {
     justify-self: start;
   }
 }
+.lesson-word-preview {
+  margin-top: 2rem;
+}
+
+.word-preview-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.learning-session {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.session-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.session-progress {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.session-progress-bar {
+  height: 100%;
+  background: #111827;
+  transition: width 180ms ease;
+}
+
+.flashcard-shell {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.flashcard-image {
+  width: min(280px, 100%);
+  max-height: 220px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  border-radius: 16px;
+}
+
+.reading {
+  font-size: 1.25rem;
+}
+
+.answer-panel {
+  margin-top: 1.5rem;
+}
+
+.example-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 16px;
+  background: #f9fafb;
+}
+
+.session-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}

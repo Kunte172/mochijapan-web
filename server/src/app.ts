@@ -7,6 +7,8 @@ import { courseRouter } from './routes/course.route.js';
 import { databaseRouter } from './routes/database.route.js';
 import { healthRouter } from './routes/health.route.js';
 import { errorHandler } from './middlewares/error.middleware.js';
+import { lessonRouter } from './routes/lesson.route.js';
+import { learningRouter } from './routes/learning.route.js';
 
 export function createApp() {
   const app = express();
@@ -26,6 +28,8 @@ export function createApp() {
   app.use('/api/database', databaseRouter);
   app.use('/api/auth', authRouter);
   app.use('/api/courses', courseRouter);
+  app.use('/api/lessons', lessonRouter);
+  app.use('/api/learning', learningRouter);
 
   app.use(errorHandler);
 

@@ -58,9 +58,9 @@ export function CourseDetailPage() {
               {lesson.titleEn && <p className="muted">{lesson.titleEn}</p>}
               {lesson.description && <p>{lesson.description}</p>}
             </div>
-            <button className="secondary-button" type="button" disabled>
-              Day 8
-            </button>
+            <Link className="secondary-button" to={`/learn/lessons/${lesson.id}`}>
+              Mở bài học
+            </Link>
           </article>
         ))}
       </div>
