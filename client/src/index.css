@@ -362,3 +362,93 @@ p {
   gap: 1rem;
   margin-top: 1.5rem;
 }
+.auth-sidebar {
+  display: grid;
+  gap: 6px;
+  margin-top: 28px;
+  padding: 12px;
+  border-top: 1px solid #ddddda;
+  color: #5f6368;
+}
+
+.auth-sidebar strong {
+  color: #202124;
+}
+
+.auth-sidebar small {
+  overflow-wrap: anywhere;
+}
+
+.verification-warning {
+  color: #9a6700;
+}
+
+.sidebar-button {
+  margin-top: 6px;
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 10px;
+  text-align: left;
+  background: #ecece6;
+  cursor: pointer;
+}
+
+.auth-page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+}
+
+.auth-card {
+  width: min(440px, 100%);
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid #ddddda;
+  border-radius: 18px;
+  background: white;
+}
+
+.auth-card label {
+  display: grid;
+  gap: 7px;
+  font-weight: 700;
+}
+
+.auth-card input {
+  width: 100%;
+  border: 1px solid #cfd1d2;
+  border-radius: 10px;
+  padding: 12px 13px;
+  background: white;
+}
+
+.auth-submit {
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #b42318;
+}
+
+.audio-button {
+  display: block;
+  margin: 12px auto 0;
+  border: 1px solid #d4d4cf;
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: white;
+  cursor: pointer;
+}
+
+.session-complete-card {
+  max-width: 620px;
+  margin: 60px auto;
+  padding: 32px;
+  text-align: center;
+  border: 1px solid #ddddda;
+  border-radius: 20px;
+  background: white;
+}
+

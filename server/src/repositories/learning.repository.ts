@@ -12,25 +12,15 @@ export const learningRepository = {
       where: {
         id: lessonId,
         status: ContentStatus.PUBLISHED,
-        course: {
-          status: ContentStatus.PUBLISHED,
-        },
+        course: { status: ContentStatus.PUBLISHED },
       },
       select: {
         id: true,
         title: true,
-        _count: {
-          select: {
-            lessonWords: true,
-          },
-        },
+        _count: { select: { lessonWords: true } },
         lessonWords: {
-          orderBy: {
-            position: 'asc',
-          },
-          select: {
-            wordId: true,
-          },
+          orderBy: { position: 'asc' },
+          select: { wordId: true },
         },
       },
     });
@@ -38,34 +28,20 @@ export const learningRepository = {
 
   findProgress(userId: string, lessonId: string) {
     return prisma.lessonProgress.findUnique({
-      where: {
-        userId_lessonId: {
-          userId,
-          lessonId,
-        },
-      },
+      where: { userId_lessonId: { userId, lessonId } },
     });
   },
 
   async startLesson(userId: string, lessonId: string, totalItems: number) {
     return prisma.$transaction(async (tx) => {
-      const existing = await tx.lessonProgress.findUnique({
-        where: {
-          userId_lessonId: {
-            userId,
-            lessonId,
-          },
-        },
+      const existingProgress = await tx.lessonProgress.findUnique({
+        where: { userId_lessonId: { userId, lessonId } },
       });
 
-      const progress = existing
+      const progress = existingProgress
         ? await tx.lessonProgress.update({
-            where: {
-              id: existing.id,
-            },
-            data: {
-              lastStudiedAt: new Date(),
-            },
+            where: { id: existingProgress.id },
+            data: { lastStudiedAt: new Date() },
           })
         : await tx.lessonProgress.create({
             data: {
@@ -75,8 +51,33 @@ export const learningRepository = {
               currentPosition: 0,
             },
           });
+      const now = new Date();
 
-      const session = await tx.studySession.create({
+      await tx.studySession.updateMany({
+        where: {
+          userId,
+          type: StudySessionType.LEARNING,
+          status: StudySessionStatus.ACTIVE,
+          NOT: {
+            lessonId,
+          },
+        },
+        data: {
+          status: StudySessionStatus.ABANDONED,
+          endedAt: now,
+        },
+      });
+      const activeSession = await tx.studySession.findFirst({
+        where: {
+          userId,
+          lessonId,
+          type: StudySessionType.LEARNING,
+          status: StudySessionStatus.ACTIVE,
+        },
+        orderBy: { startedAt: 'desc' },
+      });
+
+      const session = activeSession ?? await tx.studySession.create({
         data: {
           userId,
           lessonId,
@@ -86,22 +87,14 @@ export const learningRepository = {
         },
       });
 
-      return {
-        progress,
-        session,
-      };
+      return { progress, session };
     });
   },
 
   updateProgress(progressId: string, currentPosition: number) {
     return prisma.lessonProgress.update({
-      where: {
-        id: progressId,
-      },
-      data: {
-        currentPosition,
-        lastStudiedAt: new Date(),
-      },
+      where: { id: progressId },
+      data: { currentPosition, lastStudiedAt: new Date() },
     });
   },
 
@@ -140,22 +133,13 @@ export const learningRepository = {
       const existingStates = await tx.userWordState.findMany({
         where: {
           userId: args.userId,
-          wordId: {
-            in: args.wordIds,
-          },
+          wordId: { in: args.wordIds },
         },
-        select: {
-          wordId: true,
-        },
+        select: { wordId: true },
       });
 
-      const existingWordIds = new Set(
-        existingStates.map((item) => item.wordId),
-      );
-
-      const missingWordIds = args.wordIds.filter(
-        (wordId) => !existingWordIds.has(wordId),
-      );
+      const existingWordIds = new Set(existingStates.map((item) => item.wordId));
+      const missingWordIds = args.wordIds.filter((wordId) => !existingWordIds.has(wordId));
 
       if (missingWordIds.length > 0) {
         await tx.userWordState.createMany({
