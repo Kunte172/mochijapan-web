@@ -1,3 +1,5 @@
+export type ReviewRating = 'AGAIN' | 'HARD' | 'GOOD' | 'EASY';
+
 export type LessonProgress = {
   id: string;
   userId: string;
@@ -36,4 +38,37 @@ export type StartLessonResponse = {
 export type ProgressResponse = {
   status: 'ok';
   data: LessonProgress | null;
+};
+
+export type AnswerResponse = {
+  status: 'ok';
+  data: {
+    idempotent: boolean;
+    event: {
+      id: string;
+      wordId: string;
+      sessionId: string | null;
+      isCorrect: boolean;
+      rating: ReviewRating | null;
+      responseTimeMs: number | null;
+      previousMasteryLevel: number | null;
+      newMasteryLevel: number | null;
+      previousMemoryStrength: number | null;
+      newMemoryStrength: number | null;
+      reviewedAt: string;
+    };
+    state: {
+      id: string;
+      masteryLevel: number;
+      memoryStrength: number;
+      correctCount: number;
+      incorrectCount: number;
+      lapseCount: number;
+      reviewCount: number;
+      streak: number;
+      averageResponseTimeMs: number | null;
+      lastReviewedAt: string | null;
+      nextReviewAt: string | null;
+    } | null;
+  };
 };

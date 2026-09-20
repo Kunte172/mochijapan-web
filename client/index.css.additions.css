@@ -1,77 +1,47 @@
-.lesson-word-preview {
-  margin-top: 2rem;
+.rating-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
 }
 
-.word-preview-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.learning-session {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.session-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.session-progress {
-  height: 8px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: #e5e7eb;
-}
-
-.session-progress-bar {
-  height: 100%;
-  background: #111827;
-  transition: width 180ms ease;
-}
-
-.flashcard-shell {
-  margin-top: 2rem;
-  padding: 2rem;
-  text-align: center;
-  border: 1px solid #e5e7eb;
-  border-radius: 24px;
+.rating-button {
+  display: grid;
+  gap: 5px;
+  border: 1px solid #d4d4cf;
+  border-radius: 12px;
+  padding: 12px 8px;
   background: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
 }
 
-.flashcard-image {
-  width: min(280px, 100%);
-  max-height: 220px;
-  object-fit: contain;
-  margin: 0 auto 1rem;
-  border-radius: 16px;
+.rating-button small {
+  color: #6b7280;
+  font-weight: 400;
 }
 
-.reading {
-  font-size: 1.25rem;
+.rating-button:disabled {
+  opacity: 0.55;
+  cursor: wait;
 }
 
-.answer-panel {
-  margin-top: 1.5rem;
+.rating-again {
+  border-color: #f1b5b0;
 }
 
-.example-box {
-  margin-top: 1rem;
-  padding: 1rem;
-  text-align: left;
-  border-radius: 16px;
-  background: #f9fafb;
+.rating-easy {
+  border-color: #9bd3ae;
 }
 
-.session-actions {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1.5rem;
+.saving-indicator {
+  margin-top: 12px;
+  text-align: center;
+  color: #6b7280;
+}
+
+@media (max-width: 720px) {
+  .rating-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
