@@ -51,7 +51,7 @@ export function completeLesson(
   ).then((response) => response.data);
 }
 
-export function submitLearningAnswer(args: {
+export function submitSessionAnswer(args: {
   sessionId: string;
   wordId: string;
   rating: ReviewRating;
@@ -73,3 +73,5 @@ export function submitLearningAnswer(args: {
     },
   ).then((response) => response.data);
 }
+
+export const submitLearningAnswer = submitSessionAnswer;

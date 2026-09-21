@@ -46,11 +46,30 @@ export const reviewRepository = {
             },
           },
         });
+        const session = await tx.studySession.findUnique({
+          where: {
+            id: args.sessionId,
+          },
+        });
+        const remainingItems = session?.type === StudySessionType.REVIEW
+          ? await tx.studySessionItem.count({
+              where: {
+                sessionId: args.sessionId,
+                answeredAt: null,
+              },
+            })
+          : Math.max(
+              (session?.totalItems ?? args.currentPosition) - args.currentPosition,
+              0,
+            );
 
         return {
           event: existingByKey,
           state,
           idempotent: true,
+          sessionType: session?.type ?? null,
+          remainingItems,
+          sessionCompleted: session?.status === StudySessionStatus.COMPLETED,
         };
       }
 
@@ -58,34 +77,68 @@ export const reviewRepository = {
         where: {
           id: args.sessionId,
           userId: args.userId,
-          type: StudySessionType.LEARNING,
+          type: {
+            in: [
+              StudySessionType.LEARNING,
+              StudySessionType.REVIEW,
+            ],
+          },
           status: StudySessionStatus.ACTIVE,
         },
       });
 
-      if (!session || !session.lessonId) {
+      if (!session) {
         throw new AppError(
           404,
-          'LEARNING_SESSION_NOT_FOUND',
-          'Active learning session was not found.',
+          'STUDY_SESSION_NOT_FOUND',
+          'Active study session was not found.',
         );
       }
 
-      const lessonWord = await tx.lessonWord.findUnique({
-        where: {
-          lessonId_wordId: {
-            lessonId: session.lessonId,
-            wordId: args.wordId,
-          },
-        },
-      });
+      if (session.type === StudySessionType.LEARNING) {
+        if (!session.lessonId) {
+          throw new AppError(
+            400,
+            'LEARNING_SESSION_LESSON_MISSING',
+            'Learning session does not have a lesson.',
+          );
+        }
 
-      if (!lessonWord) {
-        throw new AppError(
-          400,
-          'WORD_NOT_IN_SESSION_LESSON',
-          'Word does not belong to this learning session lesson.',
-        );
+        const lessonWord = await tx.lessonWord.findUnique({
+          where: {
+            lessonId_wordId: {
+              lessonId: session.lessonId,
+              wordId: args.wordId,
+            },
+          },
+        });
+
+        if (!lessonWord) {
+          throw new AppError(
+            400,
+            'WORD_NOT_IN_SESSION_LESSON',
+            'Word does not belong to this learning session lesson.',
+          );
+        }
+      }
+
+      if (session.type === StudySessionType.REVIEW) {
+        const sessionItem = await tx.studySessionItem.findUnique({
+          where: {
+            sessionId_wordId: {
+              sessionId: session.id,
+              wordId: args.wordId,
+            },
+          },
+        });
+
+        if (!sessionItem) {
+          throw new AppError(
+            400,
+            'WORD_NOT_IN_REVIEW_SESSION',
+            'Word does not belong to this review session.',
+          );
+        }
       }
 
       const existingAnswer = await tx.reviewEvent.findFirst({
@@ -111,7 +164,6 @@ export const reviewRepository = {
           },
         },
       });
-
       const now = new Date();
       const next = applyReviewRating({
         current: currentState,
@@ -186,35 +238,77 @@ export const reviewRepository = {
         });
       }
 
-      const progress = await tx.lessonProgress.findUnique({
-        where: {
-          userId_lessonId: {
-            userId: args.userId,
-            lessonId: session.lessonId,
+      let remainingItems = Math.max(
+        session.totalItems - args.currentPosition,
+        0,
+      );
+      let sessionCompleted = false;
+
+      if (session.type === StudySessionType.LEARNING && session.lessonId) {
+        const progress = await tx.lessonProgress.findUnique({
+          where: {
+            userId_lessonId: {
+              userId: args.userId,
+              lessonId: session.lessonId,
+            },
           },
-        },
-      });
+        });
 
-      if (progress && progress.status !== LessonProgressStatus.COMPLETED) {
-        const boundedPosition = Math.min(
-          args.currentPosition,
-          session.totalItems,
-        );
-        const nextPosition = Math.max(
-          progress.currentPosition,
-          boundedPosition,
-        );
+        if (progress && progress.status !== LessonProgressStatus.COMPLETED) {
+          const boundedPosition = Math.min(
+            args.currentPosition,
+            session.totalItems,
+          );
+          const nextPosition = Math.max(
+            progress.currentPosition,
+            boundedPosition,
+          );
 
-        if (nextPosition !== progress.currentPosition) {
-          await tx.lessonProgress.update({
+          if (nextPosition !== progress.currentPosition) {
+            await tx.lessonProgress.update({
+              where: {
+                id: progress.id,
+              },
+              data: {
+                currentPosition: nextPosition,
+                lastStudiedAt: now,
+              },
+            });
+          }
+        }
+      }
+
+      if (session.type === StudySessionType.REVIEW) {
+        await tx.studySessionItem.update({
+          where: {
+            sessionId_wordId: {
+              sessionId: session.id,
+              wordId: args.wordId,
+            },
+          },
+          data: {
+            answeredAt: now,
+          },
+        });
+
+        remainingItems = await tx.studySessionItem.count({
+          where: {
+            sessionId: session.id,
+            answeredAt: null,
+          },
+        });
+
+        if (remainingItems === 0) {
+          await tx.studySession.update({
             where: {
-              id: progress.id,
+              id: session.id,
             },
             data: {
-              currentPosition: nextPosition,
-              lastStudiedAt: now,
+              status: StudySessionStatus.COMPLETED,
+              endedAt: now,
             },
           });
+          sessionCompleted = true;
         }
       }
 
@@ -222,6 +316,9 @@ export const reviewRepository = {
         event,
         state,
         idempotent: false,
+        sessionType: session.type,
+        remainingItems,
+        sessionCompleted,
       };
     });
   },

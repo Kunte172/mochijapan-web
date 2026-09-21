@@ -166,6 +166,7 @@ model Word {
   userStates   UserWordState[]
   reviewEvents ReviewEvent[]
   savedByUsers SavedWord[]
+  sessionItems StudySessionItem[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -279,6 +280,7 @@ model StudySession {
   endedAt   DateTime?
 
   reviewEvents ReviewEvent[]
+  items        StudySessionItem[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -374,4 +376,27 @@ model AccountActionToken {
 
   @@index([userId, type, usedAt])
   @@index([expiresAt])
+}
+
+model StudySessionItem {
+  id String @id @default(uuid())
+
+  sessionId String
+  wordId    String
+
+  session StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  word    Word         @relation(fields: [wordId], references: [id], onDelete: Restrict)
+
+  position      Int
+  scheduledFor  DateTime?
+  priorityScore Float     @default(0)
+  answeredAt    DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([sessionId, wordId])
+  @@unique([sessionId, position])
+  @@index([wordId])
+  @@index([sessionId, answeredAt])
 }

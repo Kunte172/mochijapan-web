@@ -44,6 +44,9 @@ export type AnswerResponse = {
   status: 'ok';
   data: {
     idempotent: boolean;
+    sessionType: 'LEARNING' | 'REVIEW' | 'SMART_STUDY' | null;
+    remainingItems: number;
+    sessionCompleted: boolean;
     event: {
       id: string;
       wordId: string;

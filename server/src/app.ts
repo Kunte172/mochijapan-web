@@ -10,6 +10,7 @@ import { errorHandler } from './middlewares/error.middleware.js';
 import { lessonRouter } from './routes/lesson.route.js';
 import { learningRouter } from './routes/learning.route.js';
 import { reviewRouter } from './routes/review.route.js';
+import { reviewQueueRouter } from './routes/review-queue.route.js';
 
 export function createApp() {
   const app = express();
@@ -32,6 +33,7 @@ export function createApp() {
   app.use('/api/lessons', lessonRouter);
   app.use('/api/learning', learningRouter);
   app.use('/api/learning', reviewRouter);
+  app.use('/api/review', reviewQueueRouter);
 
   app.use(errorHandler);
 

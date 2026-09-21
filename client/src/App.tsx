@@ -9,6 +9,8 @@ import { CourseListPage } from './features/courses/pages/CourseListPage';
 import { LessonDetailPage } from './features/lessons/pages/LessonDetailPage';
 import { LearningSessionPage } from './features/lessons/pages/LearningSessionPage';
 import { HomePage } from './pages/HomePage';
+import { ReviewDashboardPage } from './features/review/pages/ReviewDashboardPage';
+import { ReviewSessionPage } from './features/review/pages/ReviewSessionPage';
 
 function App() {
   return (
@@ -22,11 +24,21 @@ function App() {
           <Route path="/learn" element={<CourseListPage />} />
           <Route path="/learn/courses/:courseId" element={<CourseDetailPage />} />
           <Route path="/learn/lessons/:lessonId" element={<LessonDetailPage />} />
-          <Route
-            path="/learn/lessons/:lessonId/session"
-            element={
+          <Route path="/learn/lessons/:lessonId/session" element={
               <ProtectedRoute>
                 <LearningSessionPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/review" element={
+              <ProtectedRoute>
+                <ReviewDashboardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/review/session" element={
+              <ProtectedRoute>
+                <ReviewSessionPage />
               </ProtectedRoute>
             }
           />
