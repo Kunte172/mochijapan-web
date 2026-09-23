@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link, useParams } from 'react-router-dom';
 import { getLesson } from '../api/lesson.api';
+import { SaveWordButton } from '../../notebook/components/SaveWordButton';
 
 export function LessonDetailPage() {
   const { lessonId } = useParams();
@@ -56,10 +57,13 @@ export function LessonDetailPage() {
         {lesson.words.map((word) => (
           <article className="word-preview-row" key={word.id}>
             <div>
-              <strong>{word.writtenForm ?? word.reading}</strong>
-              {word.writtenForm && <span className="muted"> {word.reading}</span>}
+              <strong> {word.writtenForm ?? word.reading} </strong>
+              {word.writtenForm && (
+                <span className="muted"> {' '} {word.reading} </span>
+              )}
             </div>
-            <div>{word.meaningVi}</div>
+            <div> {word.meaningVi} </div>
+            <SaveWordButton wordId={word.id} source="LESSON"/>
           </article>
         ))}
       </div>

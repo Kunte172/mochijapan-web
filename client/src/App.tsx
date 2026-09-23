@@ -12,6 +12,8 @@ import { HomePage } from './pages/HomePage';
 import { ReviewDashboardPage } from './features/review/pages/ReviewDashboardPage';
 import { ReviewSessionPage } from './features/review/pages/ReviewSessionPage';
 import { LessonQuizPage } from './features/quiz/pages/LessonQuizPage';
+import { DictionaryPage } from './features/dictionary/pages/DictionaryPage';
+import { NotebookPage } from './features/notebook/pages/NotebookPage';
 
 function App() {
   return (
@@ -46,6 +48,13 @@ function App() {
           <Route path="/learn/lessons/:lessonId/quiz" element={
               <ProtectedRoute>
                 <LessonQuizPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/dictionary" element={<DictionaryPage />}/>
+          <Route path="/notebook" element={
+              <ProtectedRoute>
+                <NotebookPage />
               </ProtectedRoute>
             }
           />
