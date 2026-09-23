@@ -46,6 +46,9 @@ export function LessonDetailPage() {
           <Link className="primary-button" to={`/learn/lessons/${lesson.id}/session`}>
             Bắt đầu học
           </Link>
+          <Link className="secondary-button" to={`/learn/lessons/${lesson.id}/quiz`}>
+            Làm trắc nghiệm
+          </Link>
         </div>
       </div>
       <div className="lesson-word-preview">

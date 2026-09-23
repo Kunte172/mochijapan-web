@@ -11,6 +11,7 @@ import { lessonRouter } from './routes/lesson.route.js';
 import { learningRouter } from './routes/learning.route.js';
 import { reviewRouter } from './routes/review.route.js';
 import { reviewQueueRouter } from './routes/review-queue.route.js';
+import { quizRouter } from './routes/quiz.route.js';
 
 export function createApp() {
   const app = express();
@@ -34,6 +35,7 @@ export function createApp() {
   app.use('/api/learning', learningRouter);
   app.use('/api/learning', reviewRouter);
   app.use('/api/review', reviewQueueRouter);
+  app.use('/api/quizzes', quizRouter);
 
   app.use(errorHandler);
 

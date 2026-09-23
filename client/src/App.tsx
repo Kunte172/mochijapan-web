@@ -11,6 +11,7 @@ import { LearningSessionPage } from './features/lessons/pages/LearningSessionPag
 import { HomePage } from './pages/HomePage';
 import { ReviewDashboardPage } from './features/review/pages/ReviewDashboardPage';
 import { ReviewSessionPage } from './features/review/pages/ReviewSessionPage';
+import { LessonQuizPage } from './features/quiz/pages/LessonQuizPage';
 
 function App() {
   return (
@@ -39,6 +40,12 @@ function App() {
           <Route path="/review/session" element={
               <ProtectedRoute>
                 <ReviewSessionPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/learn/lessons/:lessonId/quiz" element={
+              <ProtectedRoute>
+                <LessonQuizPage />
               </ProtectedRoute>
             }
           />

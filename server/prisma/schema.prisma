@@ -54,6 +54,19 @@ enum AccountTokenType {
   PASSWORD_RESET
 }
 
+enum QuizAttemptStatus {
+  ACTIVE
+  COMPLETED
+  ABANDONED
+}
+
+enum QuizQuestionType {
+  WORD_TO_MEANING
+  MEANING_TO_WORD
+  READING_TO_MEANING
+  AUDIO_TO_MEANING
+}
+
 model User {
   id String @id @default(uuid())
 
@@ -74,6 +87,7 @@ model User {
   savedWords     SavedWord[]
   authSessions   AuthSession[]
   accountTokens  AccountActionToken[]
+  quizAttempts   QuizAttempt[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -128,6 +142,7 @@ model Lesson {
   lessonWords   LessonWord[]
   progress      LessonProgress[]
   studySessions StudySession[]
+  quizAttempts  QuizAttempt[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -167,6 +182,7 @@ model Word {
   reviewEvents ReviewEvent[]
   savedByUsers SavedWord[]
   sessionItems StudySessionItem[]
+  quizItems    QuizAttemptItem[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -281,6 +297,7 @@ model StudySession {
 
   reviewEvents ReviewEvent[]
   items        StudySessionItem[]
+  quizAttempt  QuizAttempt?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -399,4 +416,60 @@ model StudySessionItem {
   @@unique([sessionId, position])
   @@index([wordId])
   @@index([sessionId, answeredAt])
+}
+
+model QuizAttempt {
+  id String @id @default(uuid())
+
+  userId    String
+  lessonId  String
+  sessionId String @unique
+
+  user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson  Lesson       @relation(fields: [lessonId], references: [id], onDelete: Restrict)
+  session StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  status         QuizAttemptStatus @default(ACTIVE)
+  totalQuestions Int
+  correctAnswers Int               @default(0)
+
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  items QuizAttemptItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, status])
+  @@index([lessonId, startedAt])
+}
+
+model QuizAttemptItem {
+  id String @id @default(uuid())
+
+  attemptId String
+  wordId    String
+
+  attempt QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  word    Word        @relation(fields: [wordId], references: [id], onDelete: Restrict)
+
+  position     Int
+  questionType QuizQuestionType
+
+  optionWordIds String[]
+
+  selectedWordId       String?
+  isCorrect            Boolean?
+  responseTimeMs       Int?
+  answerIdempotencyKey String?   @unique
+  answeredAt           DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([attemptId, position])
+  @@unique([attemptId, wordId])
+  @@index([wordId])
+  @@index([attemptId, answeredAt])
 }
