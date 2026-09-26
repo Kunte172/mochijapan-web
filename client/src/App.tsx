@@ -18,6 +18,9 @@ import { LearningAnalyticsPage } from './features/analytics/pages/LearningAnalyt
 import { GrammarPage } from './features/language-content/pages/GrammarPage';
 import { KanjiPage } from './features/language-content/pages/KanjiPage';
 import { KanjiDetailPage } from './features/language-content/pages/KanjiDetailPage';
+import { PracticeDashboardPage } from './features/content-practice/pages/PracticeDashboardPage';
+import { GrammarPracticePage } from './features/content-practice/pages/GrammarPracticePage';
+import { KanjiPracticePage } from './features/content-practice/pages/KanjiPracticePage';
 
 function App() {
   return (
@@ -71,6 +74,24 @@ function App() {
           <Route path="/grammar" element={<GrammarPage />} />
           <Route path="/kanji" element={<KanjiPage />} />
           <Route path="/kanji/:character" element={<KanjiDetailPage />} />
+          <Route path="/practice" element={
+              <ProtectedRoute>
+                <PracticeDashboardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/practice/grammar" element={
+              <ProtectedRoute>
+                <GrammarPracticePage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/practice/kanji" element={
+              <ProtectedRoute>
+                <KanjiPracticePage />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </AppShell>
     </>

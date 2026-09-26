@@ -88,14 +88,18 @@ model User {
   emailVerifiedAt   DateTime?
   passwordChangedAt DateTime?
 
-  lessonProgress LessonProgress[]
-  wordStates     UserWordState[]
-  reviewEvents   ReviewEvent[]
-  studySessions  StudySession[]
-  savedWords     SavedWord[]
-  authSessions   AuthSession[]
-  accountTokens  AccountActionToken[]
-  quizAttempts   QuizAttempt[]
+  lessonProgress      LessonProgress[]
+  wordStates          UserWordState[]
+  reviewEvents        ReviewEvent[]
+  studySessions       StudySession[]
+  savedWords          SavedWord[]
+  authSessions        AuthSession[]
+  accountTokens       AccountActionToken[]
+  quizAttempts        QuizAttempt[]
+  grammarStates       UserGrammarState[]
+  kanjiStates         UserKanjiState[]
+  grammarReviewEvents GrammarReviewEvent[]
+  kanjiReviewEvents   KanjiReviewEvent[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -504,7 +508,9 @@ model GrammarPoint {
 
   status ContentStatus @default(DRAFT)
 
-  examples GrammarExample[]
+  examples     GrammarExample[]
+  userStates   UserGrammarState[]
+  reviewEvents GrammarReviewEvent[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -552,7 +558,9 @@ model Kanji {
 
   status ContentStatus @default(DRAFT)
 
-  words KanjiWord[]
+  words        KanjiWord[]
+  userStates   UserKanjiState[]
+  reviewEvents KanjiReviewEvent[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -570,4 +578,124 @@ model KanjiWord {
 
   @@id([kanjiId, wordId])
   @@index([wordId])
+}
+
+model UserGrammarState {
+  id String @id @default(uuid())
+
+  userId         String
+  grammarPointId String
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  grammarPoint GrammarPoint @relation(fields: [grammarPointId], references: [id], onDelete: Restrict)
+
+  masteryLevel   Int   @default(0)
+  memoryStrength Float @default(1.0)
+
+  firstLearnedAt DateTime  @default(now())
+  lastReviewedAt DateTime?
+  nextReviewAt   DateTime?
+
+  correctCount   Int @default(0)
+  incorrectCount Int @default(0)
+  lapseCount     Int @default(0)
+  reviewCount    Int @default(0)
+  streak         Int @default(0)
+
+  averageResponseTimeMs Float?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, grammarPointId])
+  @@index([grammarPointId])
+  @@index([userId, nextReviewAt])
+}
+
+model UserKanjiState {
+  id String @id @default(uuid())
+
+  userId  String
+  kanjiId String
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kanji Kanji @relation(fields: [kanjiId], references: [id], onDelete: Restrict)
+
+  masteryLevel   Int   @default(0)
+  memoryStrength Float @default(1.0)
+
+  firstLearnedAt DateTime  @default(now())
+  lastReviewedAt DateTime?
+  nextReviewAt   DateTime?
+
+  correctCount   Int @default(0)
+  incorrectCount Int @default(0)
+  lapseCount     Int @default(0)
+  reviewCount    Int @default(0)
+  streak         Int @default(0)
+
+  averageResponseTimeMs Float?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, kanjiId])
+  @@index([kanjiId])
+  @@index([userId, nextReviewAt])
+}
+
+model GrammarReviewEvent {
+  id String @id @default(uuid())
+
+  userId         String
+  grammarPointId String
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  grammarPoint GrammarPoint @relation(fields: [grammarPointId], references: [id], onDelete: Restrict)
+
+  isCorrect Boolean
+  rating    ReviewRating
+
+  responseTimeMs Int?
+
+  previousMasteryLevel   Int?
+  newMasteryLevel        Int?
+  previousMemoryStrength Float?
+  newMemoryStrength      Float?
+
+  idempotencyKey String @unique
+
+  reviewedAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  @@index([userId, reviewedAt])
+  @@index([grammarPointId, reviewedAt])
+}
+
+model KanjiReviewEvent {
+  id String @id @default(uuid())
+
+  userId  String
+  kanjiId String
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kanji Kanji @relation(fields: [kanjiId], references: [id], onDelete: Restrict)
+
+  isCorrect Boolean
+  rating    ReviewRating
+
+  responseTimeMs Int?
+
+  previousMasteryLevel   Int?
+  newMasteryLevel        Int?
+  previousMemoryStrength Float?
+  newMemoryStrength      Float?
+
+  idempotencyKey String @unique
+
+  reviewedAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  @@index([userId, reviewedAt])
+  @@index([kanjiId, reviewedAt])
 }

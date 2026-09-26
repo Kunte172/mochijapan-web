@@ -28,6 +28,7 @@ export function AppShell({ children }: Props) {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/learn">Học</NavLink>
           <NavLink to="/review">Ôn tập</NavLink>
+          <NavLink to="/practice">Luyện tập</NavLink>
           <NavLink to="/notebook">Sổ tay</NavLink>
           <NavLink to="/dictionary">Từ điển</NavLink>
           <NavLink to="/grammar">Ngữ pháp</NavLink>
