@@ -30,6 +30,8 @@ export function AppShell({ children }: Props) {
           <NavLink to="/review">Ôn tập</NavLink>
           <NavLink to="/notebook">Sổ tay</NavLink>
           <NavLink to="/dictionary">Từ điển</NavLink>
+          <NavLink to="/grammar">Ngữ pháp</NavLink>
+          <NavLink to="/kanji">Kanji</NavLink>
           <span>AI Tutor</span>
           <NavLink to="/analytics">Thống kê</NavLink>
         </nav>

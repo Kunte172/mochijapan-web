@@ -15,6 +15,9 @@ import { LessonQuizPage } from './features/quiz/pages/LessonQuizPage';
 import { DictionaryPage } from './features/dictionary/pages/DictionaryPage';
 import { NotebookPage } from './features/notebook/pages/NotebookPage';
 import { LearningAnalyticsPage } from './features/analytics/pages/LearningAnalyticsPage';
+import { GrammarPage } from './features/language-content/pages/GrammarPage';
+import { KanjiPage } from './features/language-content/pages/KanjiPage';
+import { KanjiDetailPage } from './features/language-content/pages/KanjiDetailPage';
 
 function App() {
   return (
@@ -52,7 +55,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/dictionary" element={<DictionaryPage />}/>
+          <Route path="/dictionary" element={<DictionaryPage />} />
           <Route path="/notebook" element={
               <ProtectedRoute>
                 <NotebookPage />
@@ -65,6 +68,9 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="/grammar" element={<GrammarPage />} />
+          <Route path="/kanji" element={<KanjiPage />} />
+          <Route path="/kanji/:character" element={<KanjiDetailPage />} />
         </Routes>
       </AppShell>
     </>

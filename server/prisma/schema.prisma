@@ -67,6 +67,14 @@ enum QuizQuestionType {
   AUDIO_TO_MEANING
 }
 
+enum JlptLevel {
+  N5
+  N4
+  N3
+  N2
+  N1
+}
+
 model User {
   id String @id @default(uuid())
 
@@ -183,6 +191,7 @@ model Word {
   savedByUsers SavedWord[]
   sessionItems StudySessionItem[]
   quizItems    QuizAttemptItem[]
+  kanjiLinks   KanjiWord[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -472,4 +481,93 @@ model QuizAttemptItem {
   @@unique([attemptId, wordId])
   @@index([wordId])
   @@index([attemptId, answeredAt])
+}
+
+model GrammarPoint {
+  id String @id @default(uuid())
+
+  code    String @unique
+  pattern String
+
+  meaningVi String
+  meaningEn String?
+
+  explanationVi String?
+  explanationEn String?
+  formation     String?
+
+  jlptLevel JlptLevel?
+  tags      String[]   @default([])
+
+  source         String?
+  sourceMetadata Json?
+
+  status ContentStatus @default(DRAFT)
+
+  examples GrammarExample[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([jlptLevel, status])
+  @@index([pattern])
+}
+
+model GrammarExample {
+  id String @id @default(uuid())
+
+  grammarPointId String
+  grammarPoint   GrammarPoint @relation(fields: [grammarPointId], references: [id], onDelete: Cascade)
+
+  japanese   String
+  vietnamese String?
+  english    String?
+  sortOrder  Int     @default(0)
+
+  createdAt DateTime @default(now())
+
+  @@index([grammarPointId, sortOrder])
+}
+
+model Kanji {
+  id String @id @default(uuid())
+
+  character String @unique
+
+  meaningsVi String[] @default([])
+  meaningsEn String[] @default([])
+
+  onyomi  String[] @default([])
+  kunyomi String[] @default([])
+  nanori  String[] @default([])
+
+  jlptLevel   JlptLevel?
+  grade       Int?
+  strokeCount Int?
+  radical     String?
+  frequency   Int?
+
+  source         String?
+  sourceMetadata Json?
+
+  status ContentStatus @default(DRAFT)
+
+  words KanjiWord[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([jlptLevel, status])
+  @@index([strokeCount])
+}
+
+model KanjiWord {
+  kanjiId String
+  wordId  String
+
+  kanji Kanji @relation(fields: [kanjiId], references: [id], onDelete: Cascade)
+  word  Word  @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@id([kanjiId, wordId])
+  @@index([wordId])
 }

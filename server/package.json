@@ -9,7 +9,8 @@
     "start": "node dist/index.js",
     "content:validate": "tsx src/scripts/import-content.ts --dry-run",
     "content:import": "tsx src/scripts/import-content.ts --apply",
-    "content:import:publish": "tsx src/scripts/import-content.ts --apply --publish"
+    "content:import:publish": "tsx src/scripts/import-content.ts --apply --publish",
+    "content:seed:language": "tsx src/scripts/seed-language-content.ts"
   },
   "keywords": [],
   "author": "",
