@@ -31,7 +31,7 @@ export function AppShell({ children }: Props) {
           <NavLink to="/notebook">Sổ tay</NavLink>
           <NavLink to="/dictionary">Từ điển</NavLink>
           <span>AI Tutor</span>
-          <span>Thống kê</span>
+          <NavLink to="/analytics">Thống kê</NavLink>
         </nav>
         <div className="auth-sidebar">
           {!initialized ? (

@@ -14,6 +14,7 @@ import { reviewQueueRouter } from './routes/review-queue.route.js';
 import { quizRouter } from './routes/quiz.route.js';
 import { dictionaryRouter } from './routes/dictionary.route.js';
 import { notebookRouter } from './routes/notebook.route.js';
+import { analyticsRouter } from './routes/analytics.route.js';
 
 export function createApp() {
   const app = express();
@@ -40,6 +41,7 @@ export function createApp() {
   app.use('/api/quizzes', quizRouter);
   app.use('/api/dictionary', dictionaryRouter);
   app.use('/api/notebook', notebookRouter);
+  app.use('/api/analytics', analyticsRouter);
 
   app.use(errorHandler);
 
